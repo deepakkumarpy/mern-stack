@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+*
+{
+    font-family: sans-serif;
+    
+}
+body
+{
+    font-size: 15px;
+    line-height: 1.8;   
+}
+.navbar 
+{
+    border-bottom:1px solid black ;
+    background-color:#ff3c78;
+}
+.nav-link
+{
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    padding: 0 10px;
+
+}
+.nav-link:hover
+{
+  color:black;
+}
+.nav-link::after
+{
+  content: "";
+  display: block;
+  background:black;
+  height: 3px;
+  bottom: 0;
+  width: 0%;
+  transition: width 0.3s;
+}
+.nav-link:hover::after
+{
+  width: 100%;
+  transition:width 0.3s;
+
+}
+
+.carousel-item::before
+{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background: #000;
+    opacity: 0.7;
+}
+#artists
+{
+  background-color:#000;
+}
+.title
+{
+  text-align: center;
+}
+.pricing
+{
+  background-color: black;
+}
+#home
+{
+  position: relative;
+  background-image:url("back1.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 500px;
+}
+#logo1
+{
+  position:absolute;
+  top: 10%;
+  opacity: 0.7;
+  padding-inline-start: 50%;
+}
+.content
+{
+  padding-top: 10%;
+}
+.content h1
+{
+  text-transform:uppercase;
+   font-size:50px;
+   margin-top: 50px;
+   text-align: center;
+}
+.content p
+{
+   font-weight: 100;
+   line-height: 20px;
+   text-align: center;
+}
+.btn2
+{
+  border: none;
+  outline: none;
+  height: 50px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+  width: 100px;
+  background-color: black;
+}
+.btn2:hover
+  {
+    background-color:#ff3c78;
+    color: black;
+    border: 1px solid;
+  }
+  .btn2 a
+  {
+    color: white;
+  }
+  .navbar-toggler
+  {
+    background-color:white;  
+  }
+  #why
+  {
+    background-color: black;
+  }
+  .footer
+  {
+    background-color: #ff3c78;
+    color: white;
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .row2
+  {
+    display: flex;
+    flex-wrap:wrap ;
+  }
+  .footer-col ul
+  {
+    list-style: none;
+  }
+
+  .footer-col
+  {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4
+  {
+    font-size: 18px;
+    color:#ffffff ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before
+  {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: #000;
+    height: 3px;
+    box-sizing: border-box;
+    width: 120px;
+  }
+  .footer-col ul li:not(:last-child)
+  {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a
+  {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all ease 0.3s;
+  }
+  .footer-col ul li a:hover
+  {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a
+  {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+     color:#000;
+     transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover
+  {
+    color:#ffffff ;
+    background-color: #000;
+  }
+  @media(max-width:767px) 
+  {
+  .footer-col
+  {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  }
+  @media(max-width:574px) 
+  {
+  .footer-col
+  {
+    width: 100%;
+  }
+  }
+  #sub
+  {
+    margin: 100px 0;
+  }
+  .ready 
+  {
+    padding: 100px;
+    text-align: center;
+  }
+  .ready .btn2
+  {
+    border: none;
+    outline: none;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    width:120px;
+  }
+  .btn2 a
+  {
+    color: white;
+    text-align: center;
+  }
+  .ready .btn2:hover
+  {
+    background-color:#ff3c78;
+    color: black;
+    border: 1px solid;
+  }
+  #why
+  {
+    background-color: white;
+  }
+  #artists
+  {
+    background-color: white;
+  }
+  #sub
+  {
+  background-image: url("back1.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  }
+  #free
+  {
+  background-image: url("back1.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding: 100px;
+  }
+  .free2
+  {
+    
+    text-align: center;
+  }
+  #faq
+  {
+    background: #ffffff;
+  }
+  .title2
+  {
+    padding-top: 0%;
+    text-align: center;
+  }
+ 
